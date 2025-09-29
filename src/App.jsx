@@ -1,9 +1,8 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Homepage from './pages';
 function App() {
   return (
     <>
-     <Hero />
+     <Homepage />
     </>
   )
 }
