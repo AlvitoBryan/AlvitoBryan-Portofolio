@@ -7,13 +7,13 @@ const Hero = () => {
   return (
     // 1. Kontainer utama: Dibuat `relative` untuk menjadi acuan posisi bagi background.
     // Properti flex, justify-center, dll. dipindahkan ke kontainer konten.
-    <div className="relative w-full h-[1100px] overflow-hidden">
+    <div className="relative w-full h-[1000px] overflow-hidden">
 
       {/* 2. Latar belakang: Diposisikan `absolute` untuk keluar dari alur normal. */}
       {/* - `inset-0` adalah shortcut untuk `top-0`, `right-0`, `bottom-0`, `left-0`.
           - `z-0` menempatkannya di lapisan belakang. */}
       <div className="absolute inset-0 z-0">
-        <Prism
+        {/* <Prism
           animationType="rotate"
           timeScale={0.5}
           height={3.5}
@@ -23,7 +23,7 @@ const Hero = () => {
           colorFrequency={1}
           noise={0}
           glow={1}
-        />
+        /> */}
       </div>
 
       {/* 3. Kontainer Konten: Wrapper baru ini yang akan mengatur layout flex. */}
